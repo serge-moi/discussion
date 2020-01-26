@@ -1,0 +1,49 @@
+<?php require("templates/partials/header.phtml"); ?>
+    <main>
+        <?php if(!isset($_SESSION["login"])): ?>
+            <div id="banniere"></div>
+        <?php else: ?>
+            <div id="banniere2"></div>
+        <?php endif; ?>
+        <article id="accueil">
+            <?php if(!isset($_SESSION["login"])): ?>
+                <h1 id="onefortitle"><span>B</span>onjour Visiteur</h1>
+            <div id="accueil2">
+                <div id="accueil3">
+                    <div class="accueillog" id="accueillog1">
+                        <p>Vous n'êtes pas connecté</p>
+                        <a class="indexlog" href="connexion.php">Connectez-<span>vous</span></a>
+                    </div>
+                    <div class="accueillog" id="accueillog2">
+                        <p>Pas encore inscrit ?</p>
+                        <p id="paralog">Inscrivez-vous en cliquant<a class="indexlog" id="indexlog2" href="inscription"> i<span>c</span>i </a>!</p>
+                    </div>
+                </div>
+            </div>
+            <?php else: ?>
+                <div>
+                   <h1 id="oneforwelcome"><span>B</span>ienvenue <?php echo $_SESSION["login"] ?></h1>
+                </div>
+            <div id="accueil2co">
+                <div id="accueil3co">
+                    <a href="profil.php" class="accueillogco" id="accueillogco1">
+                        <p class="paraindexco">Envie de modifier votre profil ?</p>
+                    </a>
+                    <a href="discussion.php" class="accueillogco" id="accueillogco2">
+                        <p class="paraindexco">Pour discuter avec nos membres, c'est par ici !</p>
+                    </a>
+                </div>
+            </div>
+            <?php endif;?>
+        </article>
+    </main>
+<?php
+
+require("templates/partials/footer.phtml");
+
+if(isset($_GET['destroy'])){
+    session_destroy();
+    header("Location:index.php");
+}
+
+?>

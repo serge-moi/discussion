@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a id="lienkinderlogo" href="index.php"><img id="kinderlogo" src="img/kinder-logo.png" alt=""></a></li>
+                <li><a class="lien" href="discussion.php"><span>D</span>iscussion</a></li>
+                <?php if(!isset($_SESSION["login"])): ?>      
+                <li><a class="lien" href="inscription.php"><span>I</span>nscription</a></li>
+                <li><a class="lien" href="connexion.php"><span>C</span>onnexion</a></li>
+                <?php else : ?>
+                <li><a class="lien" href="profil.php"><span>P</span>rofil</a></li>
+                <li><a class="lien" href="index.php?destroy=die"><span>D</span>éconnexion <span>(<?=$_SESSION["login"] ?>)</span></a></li>
+                <?php endif; ?>
+            </ul>
+        </nav>
+    </header>

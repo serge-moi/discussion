@@ -1,0 +1,23 @@
+
+<?php require("templates/partials/header.phtml"); ?>
+<section id="secdisc1">
+<?php foreach($resultat as $key => $value): ?>
+        <article id="discpost">
+            <div id="divdiscpost1"><img src="img/choco.png"><div id="divforval01"><p><?php echo $value[1] ?></p><p>: </p> <p id="paradisc2"><?php echo $value[2] ?></p></div></div>
+            <div id="divdiscpost2"><p id="disclastpara"><?php echo $value[0] ?></p></div>       
+        </article>
+<?php endforeach; ?>
+</section>
+
+<?php if(isset($_SESSION["id"])): ?>
+    <form id="formdiscmess" action="" method="post">
+    <textarea name="message" id="messagedisc" placeholder="Exprimez-vous, <?php echo $_SESSION["login"] ?>" cols="240" rows="4"></textarea>
+    <input id="sendisc" type="submit" value="Envoyer">
+    </form>
+    <?php if(isset($erreur)): ?>
+            <div id="errordisc"><?php echo $erreur ?></div>
+    <?php endif; ?>
+<?php else: ?>
+    <a href="connexion.php" id="liencocom">Connectez-vous pour pouvoir poster un message</a>
+<?php endif;
+require("templates/partials/footer.phtml");

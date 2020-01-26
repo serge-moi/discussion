@@ -1,0 +1,22 @@
+<?php
+
+if(!isset($_SESSION["login"])): 
+require("templates/partials/header.phtml"); ?>
+    <main id="mainco">
+        <div id="codiv">
+            <h2 id="titleh2co"><span>C</span>onnexion</h2>
+        <form action="" method="POST">
+            <div id="divinputco">
+                <input class="inputco" type="text" name="login" placeholder="login">
+                <input class="inputco" type="password" name="password" placeholder="Mot de passe">
+                <input id="subkind" type="submit" name="formconnexion" value="Se connecter !">
+            </div>
+        </form>
+        </div>
+        <?php if(isset($erreur)): ?>
+            <div id="errorco"><?php echo $erreur ?></div>
+        <?php endif; ?>
+    </main>
+<?php
+require("templates/partials/footer.phtml");
+endif; ?>

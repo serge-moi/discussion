@@ -1,0 +1,53 @@
+<?php require("templates/partials/header.phtml"); ?>
+    <main id="mainsub">
+        <div id="divformsub">
+            <h2 id="titleh2sub">Inscription</h2>
+        <form action="" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        <label class="sublab" for="login">Login :</label>
+                    </td>
+                    <td class="flexinput">
+                        <input type="text" placeholder="Votre login" id="login" name="login" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="sublab" for="password">Mot de passe :</label>
+                    </td>
+                    <td class="flexinput">
+                        <input type="password" placeholder="Votre mot de passe" id="password" name="password" />
+                    </td>
+                </tr>
+                <tr id="subtr3">
+                    <td >
+                        <label class="sublab" for="password2">Confirmation de mot de passe :</label>
+                    </td>
+                    <td class="flexinput">
+                        <input type="password" placeholder="Confirmer votre mdp" id="password2" name="password2" />
+                    </td>
+                </tr>
+                <tr id="subinputsub">
+                    <td >
+                        <input id="subbut" type="submit" name="inscription" value="S'inscrire">
+                    </td>
+                </tr>
+            </table>    
+        </form>
+        </div>
+        <?php if(isset($erreur)): ?>
+            <div id="errorsub"><?php echo $erreur ?></div>
+        <?php endif; ?>
+    </main>
+<?php require("templates/partials/footer.phtml") ?>
+
+
+
+
+
+
+
+
+
+</main>

@@ -1,0 +1,54 @@
+<?php require("templates/partials/header.phtml"); ?>
+    <main id="mainpro">
+        <div id="prodiv">
+            <h2 id="titleh2pro"><span>M</span>odification</h2>
+        <form action="profil.php" method="POST">
+            <table>
+                <tr>
+                    <td align="right">
+                        <label class="prolab" for="login">Login :</label>
+                    </td>
+                    <td>
+                        <input class="proinput" type="text" placeholder="Votre login" id="login" name="login" value="<?php echo $_SESSION["login"]; ?>" />
+                    </td>
+                </tr>           
+                <tr>
+                    <td align="right">
+                        <label class="prolab" for="password">Mot de passe actuel :</label>
+                    </td>
+                    <td>
+                        <input class="proinput" type="password" placeholder="Votre mot de passe" id="password" name="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label class="prolab" for="newMdp">Nouveau mot de passe :</label>
+                    </td>
+                    <td>
+                        <input class="proinput" type="password" placeholder="Nouveau mdp" id="newMdp" name="newMdp" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label class="prolab" for="newMdp2">Confirmation de mot de passe :</label>
+                    </td>
+                    <td>
+                        <input class="proinput" type="password" placeholder="Confirmer votre mdp" id="newMdp2" name="newMdp2" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input id="prosub" type="submit" name="modifier" value="Modifier">
+                    </td>
+                </tr>
+            </table>    
+        </form>
+        
+        </div>
+        <?php if(isset($erreur)): ?>
+            <div id="errorpro"><?php echo $erreur ?></div>
+        <?php endif; ?>
+    </main>
+<?php require("templates/partials/footer.phtml") ?>
+
+</main>

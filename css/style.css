@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cantora+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+
+
+
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+li{
+    flex-basis: 25%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color:#F3410E;
+}
+
+.lien{
+    font-size: 32px;
+    display: flex;
+    padding: 5px;
+}
+
+
+.lien:hover span{
+    background-color:#F3410E;
+}
+
+.lien:hover{
+    background-color: #FAF5EE;
+}
+
+span{
+    color: #17151A;
+    background-color: #FAF5EE;
+}
+
+#kinderlogo{
+    width: 25%;
+    background-color: #FAF5EE;
+    display: flex;
+    margin-left: 7px;
+}
+
+#kinderlogo:hover{
+    transform: scale(1.1);
+}
+
+/*/////////////// FOOTER ///////////////*/
+
+footer{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#copyright{
+    padding: 9px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    box-shadow: 1px 1px 5px black;
+}
+
+/*/////////////// INDEX ////////////////*/
+
+#banniere{
+    background-image: url(../img/47435.gif);
+    height: 555px;
+    background-repeat: no-repeat;
+}
+
+#banniere2{
+    background-position-y: -29px;
+    background-image: url(../img/45877.gif);
+    height: 520px;
+    background-repeat: no-repeat;
+}
+
+#surprise{
+    width: 378px;
+    position: relative;
+    left: 685px;
+    top: -5px;
+}
+
+#accueil{
+    background: linear-gradient(#F3410E, 40%, #FAF5EE);
+    text-align: center;
+}
+
+#accueil2{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 25px;
+}
+
+#onefortitle{
+    margin: 0;
+    position: relative;
+    top:-14px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 30px;
+    border: 1px solid black;
+    background-color: #0c0c0c;
+    color: #F3410E;
+    box-shadow: 0px 5px 10px black;
+}
+
+#onefortitle:hover{
+    color: #FAF5EE;
+}
+
+#onefortitle:hover span{
+    color: #F3410E;
+}
+
+#accueil3{
+    display: flex;
+}
+
+.accueillog{
+    flex-basis: 50%;
+    box-shadow: 0px 0px 10px #564d4d;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    background-color: #FAF5EE;
+    padding: 30px;
+}
+
+#accueillog1:hover + #accueillog2{
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+#accueillog2:hover > #accueillog1{
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+.accueillog:hover{
+    transform: scale(1.1);
+}
+
+.indexlog{
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Odibee Sans', cursive;
+}
+
+.indexlog:hover{
+    color: black;
+}
+
+.indexlog:hover span{
+    color: #F3410E;
+}
+
+#paralog{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#indexlog2{
+    padding: 0 4px 4px 4px;
+}
+
+#oneforwelcome{
+    margin: 0;
+    position: relative;
+    top: -8px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 30px;
+    border: 1px solid black;
+    background-color: #0c0c0c;
+    color: #F3410E;
+    box-shadow: 0px 5px 10px black;
+}
+
+.accueillogco{
+    flex-basis: 50%;
+    box-shadow: 0px 0px 10px #564d4d;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    background-color: #8C420F;
+    padding: 30px;
+}
+
+#accueillog1, #accueillog2, #accueillogco1, #accueillogco2{
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+#accueillog1:hover, #accueillog2:hover, #accueillogco1:hover, #accueillogco2:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.accueillogco:hover{
+    transform: scale(1.1);
+}
+
+#accueil2co{
+    width: 1410px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.paraindexco{
+    color: #FAF5EE;
+    text-shadow: 0px 0px 3px black;
+}
+
+#accueillogco1{
+    box-shadow: 0px 0px 4px black;
+}
+
+#accueillogco2{
+    background-color:#582C16;
+    box-shadow: 0px 0px 4px black;
+}
+
+
+
+
+/*/////////////// INSCRIPTION ///////////////*/
+
+
+
+
+#errorsub{
+    position: absolute;
+    background-color: black;
+    top: 670px;
+    border: 10px inset #881d1d;
+    color: white;
+    padding: 10px;
+}
+
+#mainsub{
+    background-image: url(../img/kindersub.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 848px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#titleh2sub{
+    margin: 0;
+    padding: 6px 246px;
+    background-color: #582C16;
+    color: white;
+    border-radius: 16px 16px 0 0;
+    font-family: 'Cantora One', sans-serif;
+}
+
+#divformsub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom left, #F3410E 50%, #FAF5EE 50%);
+    width: 600px;
+    height: 334px;
+    border-radius: 16px;
+}
+
+tr{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+}
+
+.flexinput{
+    display: flex;
+}
+
+#subinputsub{
+    justify-content: center;
+    justify-content: center;
+    background-color: #582C16;
+    width: 580px;
+    border-radius: 0 0 16px 16px;
+}
+
+.sublab{
+    background-color: white;
+}
+
+#subbut{
+    padding: 8px;
+    border: none;
+    background-color: brown;
+    color: white;
+}
+
+#subbut:hover{
+    background-color: #8C420F;
+}
+
+
+
+/*/////////// CONNEXION //////////*/
+
+#errorco{
+    position: absolute;
+    background-color: black;
+    top: 610px;
+    border: 10px inset #881d1d;
+    color: white;
+    padding: 10px;
+}
+
+#mainco{
+    background-image: url(../img/kinder-surprise-3696514_1280-e1575375643391.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titleh2co{
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 30px;
+    color: #F3410E;
+    background-color: black;
+}
+
+#codiv{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 130px 80px;
+    border-radius: 56%;
+    background: linear-gradient(to top, #F3410E, 0%, #F3410E, 50%, white,white);
+    box-shadow: 0px 12px 115px black;
+}
+
+#divinputco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputco{
+    padding: 5px 40px 0px 5px;
+    margin: 2px;
+    font-family: 'Teko', sans-serif;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+#subkind{
+    margin-top: 30px;
+    width: 111px;
+    display: flex;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: 'Amarante', cursive;
+    background-color:#FAF5EE;
+    font-size: 16px;
+    color: #047DAA;
+    border: none;
+}
+
+#subkind:hover{
+    background-color: #047DAA;
+    color: #FAF5EE;
+}
+
+
+
+/*////////// PROFIL //////////*/
+
+
+
+
+#errorpro{
+    position: absolute;
+    background-color: black;
+    top: 750px;
+    border: 10px inset #881d1d;
+    color: white;
+    padding: 10px;
+}
+
+#mainpro{
+    background-image: url(../img/MjAxOTAxMzQwN2ViNTY2N2Y0ZmVmZWY2ZTAwNzkwNzRkMzVkNWY.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 884px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titleh2pro{
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 30px;
+    color: #F3410E;
+    background-color: black;
+    text-align: center;
+}
+
+#prodiv{
+    box-shadow: 0px 0px 10px black;
+    background-color: midnightblue;
+}
+
+.prolab{
+    background-color: #ef9c13;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+
+.proinput{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#prosub{
+    font-family: 'Amarante', cursive;
+    padding: 7px;
+    font-size: 17px;
+    background-color: #FAF5EE;
+    color: black;
+    border: none;
+}
+
+#prosub:hover{
+    background-color: #F3410E;
+    color: #FAF5EE;
+}
+
+
+
+
+/*////////// DISCUSSION //////////*/
+
+
+
+#errordisc{
+    position: absolute;
+    background-color: black;
+    top: 767px;
+    border: 10px inset #f3f3f3;
+    color: white;
+    padding: 10px;
+    left: 845px;
+}
+
+#discpost{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+img{
+    width: 70px;
+}
+
+#divdiscpost1{
+    display: flex;
+    align-items: center;
+}
+
+#divdiscpost2{
+    display:flex;
+}
+
+#disclastpara{
+    margin: 0;
+    padding: 2px
+}
+
+#paradisc2{
+    padding-left: 5px;
+}
+
+#divforval01{
+    display: flex;
+}
+
+#secdisc1{
+    display: block;
+    height: 766px;
+    overflow: auto;
+    margin: 5px auto 0 auto;
+    padding: 0;
+    position: relative;
+    width: 98%;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#messagedisc{
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+#sendisc{
+    padding: 12px;
+    margin-left: 20px;
+}
+
+#formdiscmess{
+    display: flex;
+    align-items: center;
+}
+
+#liencocom{
+    border: 1px solid black;
+    width: 1665px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+    font-family: 'Teko', sans-serif;
+    font-size: 21px;
+}
+
+#liencocom:hover{
+    background-color: #582C16;
+    color: #FAF5EE;
+}
