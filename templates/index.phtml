@@ -46,4 +46,10 @@ if(isset($_GET['destroy'])){
     header("Location:index.php");
 }
 
+if(isset($_SESSION["comptecree"])){
+    echo $_SESSION["comptecree"];
+}
+
+unset($_SESSION["comptecree"]);
+
 ?>

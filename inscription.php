@@ -46,7 +46,7 @@ if(isset($_POST["inscription"])){
                     $requete = "INSERT INTO utilisateurs(login, password) VALUES ('$login','$hash')";
                     $query = mysqli_query($connexion, $requete);
                     // Je crée un message de session pour confirmer que le compte a bien été créé
-                    $_SESSION["comptecree"] = "Votre compte a bien été créé";
+                    $_SESSION["comptecree"] = "<img src=\"img/artifice.gif\" id=\"artifice1\"><div id=\"sesmess\">Félicitations, Votre compte a bien été créé</div><img src=\"img/artifice.gif\" id=\"artifice2\">";
                     redirect("index.php");
                 }else{
                     // Sinon la confirmation de mdp ne correspond pas au mdp, j'affiche un message d'erreur

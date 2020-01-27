@@ -87,7 +87,14 @@ footer{
     box-shadow: 1px 1px 5px black;
 }
 
+
+
+
+
 /*/////////////// INDEX ////////////////*/
+
+
+
 
 #banniere{
     background-image: url(../img/47435.gif);
@@ -263,7 +270,30 @@ footer{
     box-shadow: 0px 0px 4px black;
 }
 
+#sesmess{
+    position: absolute;
+    background-color: white;
+    top: 644px;
+    left: 820px;
+    border: 2px inset #FAF5EE;
+    padding: 3px;
+}
 
+#artifice1{
+    position: absolute;
+    top: 637px;
+    left: 755px;
+    padding: 3px;
+    width: 60px;
+}
+
+#artifice2{
+    position: absolute;
+    top: 637px;
+    left: 1097px;
+    padding: 3px;
+    width: 60px;
+}
 
 
 /*/////////////// INSCRIPTION ///////////////*/
