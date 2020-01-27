@@ -34,16 +34,11 @@ if(isset($_POST["inscription"])){
             }
             $requete = "SELECT login FROM utilisateurs WHERE login = \"$login\"";
             $query = mysqli_query($connexion, $requete);
-            if(mysqli_query($connexion, $requete)){
-                echo "L'enregistrement a été mise a jour avec succès";
-            } else {
-                $erreur = "impossible d'éxecuter $requete" . mysqli_error($requete);
-            }
             $resultat = mysqli_fetch_all($query);
             // Si la variable résultat n'est pas vide
             if(!empty($resultat)){
                 // Je signale a l'utilisateur qu'il y a déjà un utilisateur avec ce login
-                echo "Ce login est déjà pris";
+                $erreur = "Ce login est déjà pris";
             }else{
                 // Sinon si le mdp est égale a mdp confirmé alors je continue
                 if($password == $password2){
